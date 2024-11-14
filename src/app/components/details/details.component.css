@@ -1,0 +1,61 @@
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form inputs and labels */
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Ensuring the inputs are aligned and look clean */
+input[type="radio"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Style for amount and date input fields */
+input[type="number"], input[type="date"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Ensuring the radio buttons are aligned with the labels */
+div {
+  margin-bottom: 12px;
+}
+
+/* Submit button styling */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Disable the button when the form is invalid */
+button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Button hover effect */
+button:hover:not([disabled]) {
+  background-color: #0056b3;
+}

@@ -1,0 +1,40 @@
+<!-- <header>Personal Finance Tracker</header>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  <div>
+    <label>Type:</label>
+    <input type="radio" name="type" value="income" ngModel required #type="ngModel"> Income
+    <input type="radio" name="type" value="expense" ngModel required> Expense
+  </div>
+
+  <div>
+    <label>Amount:</label>
+    <input type="number" name="amount" ngModel required #amount="ngModel">
+  </div>
+
+  <div>
+    <label>Date:</label>
+    <input type="date" name="date" ngModel required #date="ngModel">
+  </div>
+
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form> -->
+<header>Personal Finance Tracker</header>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  <div>
+    <label>Type:</label>
+    <input type="radio" name="type" value="income" ngModel required #type="ngModel"> Income
+    <input type="radio" name="type" value="expense" ngModel required> Expense
+  </div>
+
+  <div>
+    <label>Amount:</label>
+    <input type="number" name="amount" ngModel required #amount="ngModel">
+  </div>
+
+  <div>
+    <label>Date:</label>
+    <input type="date" name="date" ngModel required #date="ngModel">
+  </div>
+
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form>
